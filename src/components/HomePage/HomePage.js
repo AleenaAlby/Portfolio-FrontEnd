@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, {useCallback, useEffect, useState} from 'react';
 import TSParticles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import './HomePage.css';
@@ -8,13 +8,30 @@ import backgroundVideo from '../../assets/v11.mp4';
 
 
 const HomePage = () => {
-    const particlesInit = useCallback(async (engine) => {
-        console.log(engine);
-        await loadFull(engine);
-    }, []);
+    // const particlesInit = useCallback(async (engine) => {
+    //     console.log(engine);
+    //     await loadFull(engine);
+    // }, []);
+    //
+    // const particlesLoaded = useCallback(async (container) => {
+    //     await console.log(container);
+    // }, []);
 
-    const particlesLoaded = useCallback(async (container) => {
-        await console.log(container);
+    const [headerText, setHeaderText] = useState('');
+    const aleenaText = "Hi, I'm Aleena"
+
+    useEffect(() => {
+        let textIndex = 0;
+        const interval = setInterval(() => {
+            if (textIndex < aleenaText.length) {
+                setHeaderText((prevText) => prevText + aleenaText.charAt(textIndex));
+                textIndex++;
+            } else {
+                clearInterval(interval);
+            }
+        }, 150); // You can adjust the typing speed by changing this value
+
+        return () => clearInterval(interval);
     }, []);
 
     return (
@@ -98,9 +115,11 @@ const HomePage = () => {
             {/*    }}*/}
             {/*/>*/}
             <video className="background-video" src={backgroundVideo} autoPlay muted loop />
+            <div className="caption-text">Kovalam Beach, Kerala, India - Video by Pexels</div>
             <div className="intro-container">
                 {/*<img src="your-image-url" alt="Your Name" className="profile-image" />*/}
-                <h1 className="Aleena">Hi, I'm Aleena</h1>
+                {/*<h1 className="Aleena">Hi, I'm Aleena</h1>*/}
+                <h1 className="Aleena">{headerText}</h1>
                 <p className="intro2">I am an experienced web developer with a passion for building engaging and dynamic websites using the latest technologies.
                     My expertise lies in React JS, Python, Django, and Javascript. I am also interested in data science and machine learning.
                     I am always eager to learn new things and explore new technologies.</p>

@@ -16,8 +16,8 @@
 .intro-container {
     position: absolute;
     top: 35%;
-    /*left: 80%;*/
-    right: 0%;
+    left: 80%;
+    /*right: 10%;*/
     transform: translate(-50%, -50%);
     text-align: right;
     z-index: 1;
@@ -27,10 +27,6 @@
 }
 .Aleena{
     font-size: 4em;
-    font-weight: bold;
-}
-.intro2{
-    font-size: 1em;
     font-weight: bold;
 }
 .profile-image {
@@ -48,5 +44,14 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.caption-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 0.8em;
+    color: #FFFFFF;
+    z-index: 1;
 }
 

@@ -1,0 +1,50 @@
+.about-me-section {
+    padding: 50px;
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+}
+
+.right-side {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.section-title {
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.section-text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+.small-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.left-content,
+.right-content {
+    width: 48%;
+    margin-left: 20px;
+}
+
+.best-move,
+.best-song {
+    color: grey;
+}

@@ -4,17 +4,20 @@
     position: relative;
     z-index: 1;
     min-height: 300px;
+    text-align: center;
 }
 
 h2 {
     font-size: 2em;
     font-weight: bold;
+    text-align: left;
 }
 
 .certifications {
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
     gap: 1rem;
+    overflow-x: auto;
 
 }
 
@@ -27,6 +30,12 @@ h2 {
     margin-bottom: 30px; /* Add a small gap */
     /*display: block;*/
 }
+/*.certification-logo {*/
+/*    height: 100px;*/
+/*    width: 100px;*/
+/*    margin: 0 auto;*/
+/*    padding-top: 10px;*/
+/*}*/
 
 .certification-card {
     display: flex;
@@ -55,4 +64,38 @@ h2 {
     .achievements-container {
         padding-left: 10%;
     }
+}
+
+
+/*.achievements-container {*/
+/*    text-align: center;*/
+/*    padding: 2rem;*/
+/*}*/
+
+.certifications {
+    /*display: flex;*/
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.certification-cards {
+    display: flex;
+    gap: 1rem;
+}
+
+.achievement-card {
+    width: 18rem;
+    margin: 0 auto;
+}
+
+.certification-logo {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.certification-date {
+    font-size: 0.9rem;
+    font-weight: 500;
 }

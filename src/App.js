@@ -1,23 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import HomePage from './components/HomePage/HomePage';
 import Education from './components/Education/Education';
 import Quote from './components/Quote/Quote';
 import Achievements from './components/Achievements/Achievements';
 import WorkExperience from './components/WorkExperience/WorkExperience';
+// import AboutMe from './components/AboutMe/AboutMe';
+import axios from 'axios';
 
-const certifications = [
-    {
-        logo: 'az.png',
-        name: 'Microsoft Certified: Azure Fundamentals',
-        date: 'January 2022',
-    },
-    {
-        logo: 'coventry_uni_logo.png',
-        name: 'Certification 2',
-        date: 'February 2022',
-    },
-    // ...
-];
 
 const experiences = [
     {
@@ -34,12 +23,40 @@ const experiences = [
     }
 ];
 function App() {
+
+    const[certifications, setcertifications] = useState([]);
+    const[Education, setEducation] = useState([]);
+
+    useEffect( ()=>{
+            axios.get('http://127.0.0.1:8000/api/certifications/')
+                .then(res =>{
+                    setcertifications(res.data);
+                })
+                .catch(err =>{
+                    console.log(err);
+                });
+        }, []);
+
+    useEffect(()=>{
+            axios.get('http://127.0.0.1:8000/api/educations/')
+            .then(res =>{
+                setEducation(res.data);
+            })
+            .catch(err =>{
+                console.log(err);
+            });
+        }, [] )
+
   return (
       <div className="App">
 
           <HomePage />
-          <Education />
+
+          <Education Education={Education}/>
           <WorkExperience experiences={experiences} />
+          {/*{certifications.map(certification =>(*/}
+          {/*    <Achievements certifications={certifications} />*/}
+          {/*))}*/}
           <Achievements certifications={certifications} />
           <Quote />
 

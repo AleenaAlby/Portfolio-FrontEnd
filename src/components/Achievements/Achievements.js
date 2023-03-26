@@ -7,15 +7,17 @@ const Achievements = ({ certifications }) => {
         <div className="achievements-container">
             <h2>Achievements and Certifications</h2>
             <div className="certifications">
-                {certifications.map((certification, index) => (
-                    <Card className="achievement-card" key={index}>
-                        <Card.Img variant="top" src={certification.logo} className="certification-logo" />
-                        <Card.Body>
-                            <Card.Title>{certification.name}</Card.Title>
-                            <Card.Text className="certification-date">{certification.date}</Card.Text>
-                        </Card.Body>
-                    </Card>
-                ))}
+                <div className="certification-cards">
+                    {certifications.map((certification, index) => (
+                        <Card className="achievement-card" key={index}>
+                            <Card.Img variant="top" src={certification.logo} className="certification-logo" />
+                            <Card.Body>
+                                <Card.Title>{certification.cert_name}</Card.Title>
+                                <Card.Text className="certification-date">{certification.cert_date}</Card.Text>
+                            </Card.Body>
+                        </Card>
+                    ))}
+                </div>
             </div>
         </div>
     );
