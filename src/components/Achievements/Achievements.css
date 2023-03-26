@@ -1,0 +1,58 @@
+.achievements-container {
+    background-color: #929AAB;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    min-height: 300px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.certifications {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+.certification-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px; /* Add a small gap */
+    /*display: block;*/
+}
+
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.achievement-card {
+    width: 300px;
+    height: 300px; /* Adjust this value as needed */
+    flex-basis: calc(100% / 3 - 1rem); /* Adjust for the gap */
+    max-width: calc(100% / 3 - 1rem); /* Adjust for the gap */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%
+}
+.certification-date{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .achievements-container {
+        padding-left: 10%;
+    }
+}

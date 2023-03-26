@@ -1,0 +1,35 @@
+.work-experience-container {
+    padding: 80px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 1;
+    min-height: 300px;
+    /*padding-left: 10%;*/
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+h4 {
+    margin-bottom: 5px;
+    font-weight: normal;
+    color: #666;
+}
+
+p {
+    margin-bottom: 5px;
+}

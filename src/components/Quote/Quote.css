@@ -1,0 +1,34 @@
+.quote-section {
+    background-color: #FFF;
+    padding: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.quote-text {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.0rem;
+    z-index: 3;
+    line-height: 1.5rem;
+    max-width: 900px; /* add max-width and set its value to 800px */
+    margin: 0 auto;
+}
+
+.quote-symbol:first-of-type {
+    margin-right: 0.5em; /* increase the margin to create more space */
+}
+
+.quote-symbol:last-of-type {
+    margin-left: 0.5em; /* increase the margin to create more space */
+}
+
+.quote-symbol {
+    font-size: 1.7rem; /* reduce the font size of the quote symbols to 3rem */
+    font-weight: 100;
+    position: relative; /* change the position to relative */
+    /*top: -0.2em; !* adjust the vertical position *!*/
+    /*margin-right: 0.25em; !* add margin to create space between the quote symbol and the text *!*/
+    /*margin-left: -0.25em;*/
+}

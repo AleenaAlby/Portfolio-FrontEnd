@@ -3,6 +3,7 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    z-index: 0;
 }
 
 .particles {
@@ -14,16 +15,38 @@
 
 .intro-container {
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 35%;
+    /*left: 80%;*/
+    right: 0%;
     transform: translate(-50%, -50%);
-    text-align: left;
-    z-index: 2;
+    text-align: right;
+    z-index: 1;
+    width: 350px;
+    font-family: 'Playfair Display', serif;
+    color: #FFFFFF;
 }
-
+.Aleena{
+    font-size: 4em;
+    font-weight: bold;
+}
+.intro2{
+    font-size: 1em;
+    font-weight: bold;
+}
 .profile-image {
     width: 150px;
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
 }
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
