@@ -46,9 +46,9 @@ h2 {
 
 .achievement-card {
     width: 300px;
-    height: 300px; /* Adjust this value as needed */
-    flex-basis: calc(100% / 3 - 1rem); /* Adjust for the gap */
-    max-width: calc(100% / 3 - 1rem); /* Adjust for the gap */
+    height: 300px;
+    flex-basis: calc(100% / 3 - 1rem);
+    max-width: calc(100% / 3 - 1rem);
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
@@ -66,7 +66,9 @@ h2 {
         /*padding-left: 10%;*/
     }
 }
-
+.achievement-card {
+    height: 200px;
+}
 
 /*.achievements-container {*/
 /*    text-align: center;*/
@@ -100,4 +102,56 @@ h2 {
 .certification-date {
     font-size: 0.9rem;
     font-weight: 500;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .achievements-container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .certifications {
+        margin-left: 2%;
+    }
+
+    .certification-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .achievement-card {
+        height: 250px;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .achievements-container {
+        padding: 25px;
+        height: 250px;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .certifications {
+        margin-left: 3%;
+    }
+
+    .certification-logo {
+        width: 90px;
+        height: 90px;
+    }
+
+    .achievement-card {
+        width: calc(100% / 2 - 1rem); /* Adjust for the gap */
+        max-width: calc(100% / 2 - 1rem); /* Adjust for the gap */
+    }
 }

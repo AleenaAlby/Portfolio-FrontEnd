@@ -34,3 +34,39 @@ h4 {
 p {
     margin-bottom: 5px;
 }
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .work-experience-container {
+        padding: 25px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .experience-list {
+        margin-left: 2%;
+    }
+
+    .experience-item {
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        font-size: 1em;
+        margin-bottom: 3px;
+    }
+
+    p {
+        font-size: 0.9em;
+        margin-bottom: 3px;
+    }
+}
+

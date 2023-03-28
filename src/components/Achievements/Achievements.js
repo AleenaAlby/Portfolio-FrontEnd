@@ -4,9 +4,9 @@ import './Achievements.css';
 
 const Achievements = ({ certifications }) => {
     const defaultCertification = {
-        logo: 'default_image.png', // Replace with the default image path
-        cert_name: 'Default-Name',
-        cert_date: 'Default-Date',
+        logo: 'az.png', // Replace with the default image path
+        cert_name: 'Microsoft Certified: Azure Fundamentals',
+        cert_date: 'January 2023',
     };
 
     if (certifications.length === 0) {
