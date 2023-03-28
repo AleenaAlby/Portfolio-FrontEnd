@@ -4,7 +4,7 @@ import Education from './components/Education/Education';
 import Quote from './components/Quote/Quote';
 import Achievements from './components/Achievements/Achievements';
 import WorkExperience from './components/WorkExperience/WorkExperience';
-// import AboutMe from './components/AboutMe/AboutMe';
+import ContactMe from './components/ContactMe/ContactMe';
 import axios from 'axios';
 
 
@@ -59,7 +59,9 @@ function App() {
           {/*    <Achievements certifications={certifications} />*/}
           {/*))}*/}
           <Achievements certifications={certifications} />
+          <ContactMe />
           <Quote />
+
 
       </div>
   );
