@@ -2,6 +2,8 @@
     /*width: 100%;*/
     padding: 80px;
     background-color: #EEEEEE;
+    position: relative;
+    z-index: 1;
 }
 
 .title {
@@ -49,4 +51,42 @@ button {
 
 button:hover {
     background-color: #283593;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .contact-form {
+        padding: 40px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* iPads, Tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .contact-form {
+        padding: 60px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }

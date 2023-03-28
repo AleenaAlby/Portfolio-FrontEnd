@@ -59,3 +59,37 @@
 .graduation-info {
     font-size: 1em;
 }
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+    .education-section {
+        padding: 25px;
+    }
+
+    .university-info {
+        position: static;
+        transform: none;
+    }
+
+    .university-details {
+        flex-direction: column;
+    }
+
+    .university-logo {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+    .education-title {
+        font-size: 1.5em;
+    }
+
+    .university-name {
+        font-size: 1.2em;
+    }
+
+    .degree-info,
+    .graduation-info {
+        font-size: 0.9em;
+    }
+}
