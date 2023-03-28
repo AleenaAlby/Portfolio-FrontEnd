@@ -1,6 +1,6 @@
-import React, {useCallback, useEffect, useState} from 'react';
-import TSParticles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+import React, { useEffect, useState} from 'react';
+// import TSParticles from 'react-tsparticles';
+// import { loadFull } from 'tsparticles';
 import './HomePage.css';
 import backgroundVideo from '../../assets/v11.mp4';
 
