@@ -3,6 +3,7 @@ import TSParticles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import './HomePage.css';
 import backgroundVideo from '../../assets/v11.mp4';
+import resumePDF from '../../assets/AleenaAlby003.pdf';
 
 
 
@@ -122,6 +123,14 @@ const HomePage = () => {
                 <p className="intro2">I am an experienced web developer with a passion for building engaging and dynamic websites using the latest technologies.
                     My expertise lies in React JS, Python, Django, and Javascript. I am also interested in data science and machine learning.
                     I am always eager to learn new things and explore new technologies.</p>
+                <a href={resumePDF} download className="download-link">
+                    <button className="download-button" onClick={() => { /* Handle click event here */ }}>
+                        <i className="download-icon">Resume</i>
+                    </button>
+                </a>
+                <p>I am presently working on building my portfolio, with a focus on both backend and front end development.
+                    Feel free to browse the site and, if you have any suggestions or feedback,
+                    please don't hesitate to reach out to me.</p>
             </div>
         </div>
     );

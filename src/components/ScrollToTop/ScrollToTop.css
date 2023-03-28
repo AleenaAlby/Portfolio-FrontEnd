@@ -1,0 +1,21 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /*position: relative;*/
+    z-index: 1;
+}
+
+.scroll-to-top-button {
+    background-color: black;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #555;
+}

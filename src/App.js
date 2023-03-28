@@ -5,6 +5,8 @@ import Quote from './components/Quote/Quote';
 import Achievements from './components/Achievements/Achievements';
 import WorkExperience from './components/WorkExperience/WorkExperience';
 import ContactMe from './components/ContactMe/ContactMe';
+import Footer from './components/Footer/Footer';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import axios from 'axios';
 
 
@@ -61,8 +63,9 @@ function App() {
           <Achievements certifications={certifications} />
           <ContactMe />
           <Quote />
+          <Footer />
 
-
+          <ScrollToTop />
       </div>
   );
 }
