@@ -1,7 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Education.css';
 
-const Education = () => {
+const Education = ({ educationData }) => {
+    const defaultCertification = {
+        university_logo: 'default_image.png', // Replace with the default image path
+        university_name: 'Default-Name',
+        cert_date: 'Default-Date',
+    };
+
+    if (educationData.length === 0) {
+        educationData = [defaultCertification];
+    }
     const [showLine, setShowLine] = useState(false);
     const sectionRef = useRef(null);
 
@@ -25,31 +34,26 @@ const Education = () => {
 
     return (
         <div className="education-section">
+            <h2 className="education-title">Education</h2>
             <div className="university" ref={sectionRef}>
-                <div className="university-info">
-                    <h2 className="education-title">Education</h2>
-                    <div className="university-details">
-                        <img src={process.env.PUBLIC_URL + '/coventry_uni_logo.png'} alt="Coventry University Logo" className="university-logo" />
-                        <div className="university-text">
-                            <h3 className="university-name">Coventry University</h3>
-                            <p className="degree-info">MSc Data Science & Computational Intelligence</p>
-                            <p className="graduation-info">2022 - 2023</p>
+                {educationData.map((education, index) => (
+                    <div key={index}>
+                        <div className="university-details">
+                            <img src={education.university_logo} alt="Coventry University Logo" className="university-logo" />
+                            <div className="university-text">
+                                <h3 className="university-name">{education.university_name}</h3>
+                                <p className="degree-info">{education.course_name}</p>
+                                <p className="graduation-info">{education.course_start_year} - {education.course_end_year}</p>
+                            </div>
+
                         </div>
+                        {showLine && <div className="hr-line"></div>}
                     </div>
-                    {showLine && <div className="hr-line"></div>}
-                    <div className="university-details">
-                        <img src={process.env.PUBLIC_URL + '/mahatma_gandhi_uni_logo.png'} alt="Mahatma Gandhi University Logo" className="university-logo" />
-                        <div className="university-text">
-                            <h3 className="university-name">Mahatma Gandhi University</h3>
-                            <p className="degree-info">Bachelor of Computer Application</p>
-                            <p className="graduation-info">2015 - 2018</p>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
-
     );
 };
 
 export default Education;
+

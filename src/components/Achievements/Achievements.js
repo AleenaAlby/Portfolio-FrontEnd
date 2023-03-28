@@ -3,6 +3,15 @@ import { Card } from 'react-bootstrap';
 import './Achievements.css';
 
 const Achievements = ({ certifications }) => {
+    const defaultCertification = {
+        logo: 'default_image.png', // Replace with the default image path
+        cert_name: 'Default-Name',
+        cert_date: 'Default-Date',
+    };
+
+    if (certifications.length === 0) {
+        certifications = [defaultCertification];
+    }
     return (
         <div className="achievements-container">
             <h2>Achievements and Certifications</h2>

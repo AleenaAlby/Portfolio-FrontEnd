@@ -25,7 +25,7 @@ const experiences = [
 function App() {
 
     const[certifications, setcertifications] = useState([]);
-    const[Education, setEducation] = useState([]);
+    const [educationData, setEducationData] = useState([]);
 
     useEffect( ()=>{
             axios.get('http://127.0.0.1:8000/api/certifications/')
@@ -40,7 +40,7 @@ function App() {
     useEffect(()=>{
             axios.get('http://127.0.0.1:8000/api/educations/')
             .then(res =>{
-                setEducation(res.data);
+                setEducationData(res.data);
             })
             .catch(err =>{
                 console.log(err);
@@ -52,7 +52,8 @@ function App() {
 
           <HomePage />
 
-          <Education Education={Education}/>
+          {/*<Education Education={educationData}/>*/}
+          <Education educationData={educationData}/>
           <WorkExperience experiences={experiences} />
           {/*{certifications.map(certification =>(*/}
           {/*    <Achievements certifications={certifications} />*/}
