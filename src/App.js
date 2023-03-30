@@ -30,7 +30,7 @@ function App() {
     const [educationData, setEducationData] = useState([]);
 
     useEffect( ()=>{
-            axios.get('http://127.0.0.1:8000/api/certifications/')
+            axios.get('https://portfolio-aleena.herokuapp.com/api/certifications/')
                 .then(res =>{
                     setcertifications(res.data);
                 })
@@ -40,7 +40,7 @@ function App() {
         }, []);
 
     useEffect(()=>{
-            axios.get('http://127.0.0.1:8000/api/educations/')
+            axios.get('https://portfolio-aleena.herokuapp.com/api/educations/')
             .then(res =>{
                 setEducationData(res.data);
             })

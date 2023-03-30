@@ -11,7 +11,7 @@ const ContactForm = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:8000/api/send_message/", {
+            const response = await axios.post("https://portfolio-aleena.herokuapp.com/api/send_message/", {
                 name: name,
                 email: email,
                 message: message,
