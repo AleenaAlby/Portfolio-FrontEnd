@@ -7,6 +7,7 @@ import WorkExperience from './components/WorkExperience/WorkExperience';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Skills from './components/Skills/Skills';
 import axios from 'axios';
 
 
@@ -56,6 +57,7 @@ function App() {
 
           {/*<Education Education={educationData}/>*/}
           <Education educationData={educationData}/>
+          <Skills />
           <WorkExperience experiences={experiences} />
           {/*{certifications.map(certification =>(*/}
           {/*    <Achievements certifications={certifications} />*/}
