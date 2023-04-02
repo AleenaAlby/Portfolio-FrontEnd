@@ -13,7 +13,7 @@
 }
 .intro-container {
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 80%;
     /*right: 10%;*/
     transform: translate(-50%, -50%);
@@ -23,6 +23,25 @@
     font-family: 'Playfair Display', serif;
     color: #FFFFFF;
 }
+.social-links {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.2);
+}
+
 .intro2{
     font-weight: 800;
 }

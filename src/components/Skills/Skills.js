@@ -34,7 +34,7 @@ const Skills = () => {
     return (
         <div className="skills">
             <h2 className="skills-heading">What I Do</h2>
-            <p className="skills-description">CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK</p>
+            <p className="skills-description"></p>
             <div className="skills-logos">
                 {icons.map((iconObj, index) => (
                     <div className="skill-logo" key={index}>

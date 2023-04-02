@@ -16,13 +16,13 @@ const experiences = [
         jobTitle: 'Software Engineer',
         company: 'Emdeon Digital Service',
         duration: 'January 2020 - June 2021',
-        description: 'Developed and maintained web applications using React and Node.js.'
+        description: 'Developed and maintained web applications using React and Django REST Frameworks.'
     },
     {
         jobTitle: 'System Administrator',
         company: 'Reunion Fire systems Pvt.Ltd',
         duration: 'November 2018 - December 2019',
-        description: 'Designed and implemented responsive websites using HTML, CSS, and JavaScript.'
+        description: 'Ensuring that computer systems and networks are running efficiently, effectively, and securely, to support the business operations.'
     }
 ];
 function App() {

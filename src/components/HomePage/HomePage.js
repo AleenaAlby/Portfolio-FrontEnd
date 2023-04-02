@@ -4,6 +4,11 @@ import { loadFull } from 'tsparticles';
 import './HomePage.css';
 import backgroundVideo from '../../assets/v11.mp4';
 import resumePDF from '../../assets/AleenaAlby003.pdf';
+import linkedInLogo from './linkedin-icon.svg';
+import tableauLogo from './tableau-software.svg';
+import githubLogo from './github-icon.svg';
+import azureLogo from './azure.svg';
+
 
 
 
@@ -131,6 +136,20 @@ const HomePage = () => {
                 <p>I am presently working on building my portfolio, with a focus on both backend and front end development.
                     Feel free to browse the site and, if you have any suggestions or feedback,
                     please don't hesitate to reach out to me.</p>
+                <div className="social-links">
+                    <a href="https://www.linkedin.com/in/aleena-alby/" target="_blank" rel="noopener noreferrer">
+                        <img src={linkedInLogo} alt="LinkedIn" className="social-logo" />
+                    </a>
+                    <a href="https://github.com/AleenaAlby" target="_blank" rel="noopener noreferrer">
+                        <img src={githubLogo} alt="GitHub" className="social-logo" />
+                    </a>
+                    <a href="https://www.credly.com/badges/60fdebe3-e94b-4b89-9169-42b8c60b7876/linked_in_profile" target="_blank" rel="noopener noreferrer">
+                        <img src={azureLogo} alt="Azure Certificate" className="social-logo" />
+                    </a>
+                    <a href="https://public.tableau.com/app/profile/aleena.alby" target="_blank" rel="noopener noreferrer">
+                        <img src={tableauLogo} alt="Tableau" className="social-logo" />
+                    </a>
+                </div>
             </div>
         </div>
     );

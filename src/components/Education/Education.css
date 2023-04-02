@@ -72,7 +72,7 @@
     }
 
     .university-details {
-        flex-direction: column;
+        /*flex-direction: column;*/
     }
 
     .university-logo {
